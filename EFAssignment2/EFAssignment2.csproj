@@ -21,9 +21,6 @@
     <ProjectReference Include="..\EFAssignment2.Infrastructure\EFAssignment2.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
-    <ProjectReference Include="..\EFAssignment2.Services\EFAssignment2.Services.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\EFAssignment2.Application\EFAssignment2.Application.csproj" />
   </ItemGroup>
 </Project>
