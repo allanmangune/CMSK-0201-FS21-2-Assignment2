@@ -157,9 +157,9 @@ namespace EFAssignment2.Controllers
                 await ListUsers();
 
                 var userDto = new UserDto {
-                     Name = "swift",
-                     EmailAddress = "swift@email.com",
-                     PhoneNumber = "444-555-5555"
+                     Name = "James",
+                     EmailAddress = "james@email.com",
+                     PhoneNumber = "333-555-5555"
                 };
                 await _userService.CreateUserAsync(userDto);
                 _logger.LogInformation($"Added user: {userDto.Name}");
@@ -168,7 +168,7 @@ namespace EFAssignment2.Controllers
 
                 var list = await _userService.GetAllUsersAsync();
                 var userDto2 = list.First();
-                userDto2.Name = $"{userDto2.Name} Updated";
+                userDto2.Name = $"{userDto2.Name} Updated2";
                 await _userService.UpdateUserAsync(userDto2);
                 _logger.LogInformation($"Updated user: {userDto2.Name}");
 
